@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="CREAT ACCOUNT"
+                android:fontFamily="@font/mv"
+                android:textColor="#FF1E90FF"
+                android:textSize="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            //이름
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:fontFamily="@font/mv"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/Btn_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mv"
+                android:hint=" 이름을 입력하세요"
+                android:background="@drawable/border" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            //아이디
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mv"
+                android:text="아이디"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/idText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mv"
+                android:background="@drawable/border"
+                android:hint=" 아이디를 입력하세요"/>
+
+            <TextView
+                android:id="@+id/checkid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*아이디가 이미 있습니다."
+                android:fontFamily="@font/mv"
+                android:textColor="#FF0000"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            //비번
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:fontFamily="@font/mv"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/mv"
+                android:hint=" 비밀번호를 입력하세요"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:id="@+id/checkpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" *숫자와 소문자를 포함하여 15자 이상 또는 8자 이상이어야 합니다.*"
+                android:fontFamily="@font/mv"
+                android:textColor="#FF0000"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            //비번
+
+            <TextView
+                android:id="@+id/Repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 재확인"
+                android:fontFamily="@font/mv"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/RepasswordText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/mv"
+                android:inputType="textPassword"
+                android:hint=" 비밀번호를 입력하세요"/>
+
+            <TextView
+                android:id="@+id/recheckpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mv"
+                android:text=" *비밀번호가 다릅니다*"
+                android:textColor="#FF0000"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="40dp">
+
+            <Button
+                android:id="@+id/Btn_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mv"
+                android:text="SIGN UP"
+                android:textColor="#000000"
+                android:background="#FFC0C0C0"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

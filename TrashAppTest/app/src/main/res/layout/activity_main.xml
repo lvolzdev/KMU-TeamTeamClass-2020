@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottombar">
+    </FrameLayout>
+
+    <LinearLayout
+        android:background="#ffd3d3d3"
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#ffd3d3d3"
+            android:src="@drawable/ssmallmap"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_margin="10dp"
+            android:background="#ffd3d3d3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ssmallcoin"
+            android:text="랭킹"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_margin="10dp"
+            android:background="#ffd3d3d3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ssmallaccount"
+            android:text="내 정보"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
